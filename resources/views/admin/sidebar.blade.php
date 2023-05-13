@@ -1,9 +1,9 @@
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4"> 
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
         <a href="/admin" class="brand-link">
         <img src="/template/admin/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">Shop chơi đồ</span>
+        <span class="brand-text font-weight-light">Shop Thực Phẩm</span>
         </a>
 
         <!-- Sidebar -->
@@ -56,7 +56,7 @@
                     <p>Danh sách danh mục</p>
                     </a>
                 </li>
-                
+
                 </ul>
             </li>
             </ul>
@@ -85,12 +85,12 @@
                     <p>Quản lý sản phẩm</p>
                     </a>
                 </li>
-                
+
                 </ul>
             </li>
             </ul>
         </nav>
-        
+
         <nav class="mt-2">
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <li class="nav-item">
@@ -114,7 +114,7 @@
                         <p>Quản lý Quảng cáo</p>
                         </a>
                     </li>
-                    
+
                     </ul>
                 </li>
                 </ul>
@@ -144,7 +144,7 @@
             </li>
             </ul>
         </nav>
-       
+
 
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
@@ -165,14 +165,14 @@
                     <p>Đăng xuất khỏi hệ thống</p>
                     </a>
                 </li>
-                
-                
+
+
                 </ul>
             </li>
             </ul>
         </nav>
-    
-        
+
+
         <!-- /.sidebar-menu -->
         </div>
         <!-- /.sidebar -->

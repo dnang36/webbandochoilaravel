@@ -12,36 +12,36 @@ use Illuminate\Support\Facades\Http;
 
 class MenuService
 {
-    public function getAll()
-    {
-        $response = Http::get('webservice.test/admin/menus/add');
-        return $response->json();
-    }
+//    public function getAll()
+//    {
+//        $response = Http::get('webservice.test/admin/menus/add');
+//        return $response->json();
+//    }
+//
+//    public function getParent($id)
+//    {
+//        $response = Http::get('webservice.test/admin/menus/edit'.$id);
+//        return $response->json();
+//    }
 
-    public function getParent($id)
-    {
-        $response = Http::get('webservice.test/admin/menus/edit'.$id);
-        return $response->json();
-    }
-
-    // public function getAll()
-    // {
-    //     return Menu::orderbyDesc('id')->paginate(10);
-    // }
+     public function getAll()
+     {
+         return Menu::orderbyDesc('id')->paginate(10);
+     }
 
     public function create($request)
     {
         try {
             $data = $request->except('_token');
-            $response = Http::get('webservice.test/admin/menus/store',$data);
+//            $response = Http::get('webservice.test/admin/menus/store',$data);
             // dd($response->json());
-            // Menu::create([
-            //     'name' => (string)$request->input('name'),
-            //     'parent_id' => (int)$request->input('parent_id'),
-            //     'description' => (string)$request->input('description'),
-            //     'content' => (string)$request->input('content'),
-            //     'active' => (string)$request->input('active')
-            // ]);
+             Menu::create([
+                 'name' => (string)$request->input('name'),
+                 'parent_id' => (int)$request->input('parent_id'),
+                 'description' => (string)$request->input('description'),
+                 'content' => (string)$request->input('content'),
+                 'active' => (string)$request->input('active')
+             ]);
 
             Session::flash('success', 'Tạo Danh Mục Thành Công');
         } catch (\Exception $err) {
@@ -99,6 +99,6 @@ class MenuService
             ->paginate(12)
             ->withQueryString();
 
-        
+
     }
 }
