@@ -16,13 +16,13 @@ class MainController extends Controller
     {
         $this->slider = $slider;
         $this->product = $product;
-        
+
     }
 
     public function index()
     {
         return view('home',[
-            'title'=>'shop chơi đồ',
+            'title'=>'shop Thực Phẩm',
             'sliders' => $this->slider->show(),
             'products' => $this->product->get()
         ]);
@@ -31,7 +31,7 @@ class MainController extends Controller
     public function index1()
     {
         return view('admin.main',[
-            'title'=>'shop chơi đồ',
+            'title'=>'Shop Thực Phẩm',
         ]);
     }
 }
