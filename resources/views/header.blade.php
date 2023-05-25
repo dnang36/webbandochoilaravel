@@ -8,7 +8,7 @@
 
 					<!-- Logo desktop -->
 					<a href="#" class="logo">
-						<img src="/template/images/icons/KFC.png" alt="IMG-LOGO">
+						<img src="/template/images/icons/img.png" alt="IMG-LOGO">
 					</a>
 
 					<!-- Menu desktop -->
